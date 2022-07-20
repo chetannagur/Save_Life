@@ -1,0 +1,70 @@
+﻿
+
+
+.container1{
+    width:100%;
+    height:553px;
+    position:absolute;
+    top:42%; 
+    right:0;left:0;
+    
+   
+}
+.inner{
+    width:100%;
+    height:40vh;
+    margin-top:13%;
+    
+    text-align: center;
+}
+
+.lblstyle{
+     font-size:2vw;
+    font-family: 'Righteous', cursive;
+    color:rebeccapurple;
+}
+.txtstyle{
+    width:20vw;
+    height:4vh;
+    border:0px;
+    font-size:2vw;
+    background-color:transparent;
+    border-bottom:2px solid black;
+    padding-top:1vh;
+    padding-left:2vw;
+    font-family: 'Passion One', cursive;
+}
+#Button1{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    width:20vw;
+    background-color:transparent;
+    font-size:3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color:rgba(245, 241, 241, 0.64);
+    color:dodgerblue;
+    border-radius:15%;
+}
+#btnsignup{
+    width:20vw;
+    height:8vh;
+    border:0px;
+    background-color:transparent;
+    font-size:3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color:rgba(245, 241, 241, 0.64);
+    color:dodgerblue;
+    border-radius:15%;
+}
+#btnfrgtpass{
+    width:20vw;
+    height:8vh;
+    border:0px;
+    background-color:transparent;
+    font-size:3vw;
+    font-family: 'Boogaloo', cursive;
+    background-color:rgba(245, 241, 241, 0.64);
+    color:dodgerblue;
+    border-radius:15%;
+}

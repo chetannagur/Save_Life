@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Sem6_project.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder></title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="boostrap/animate.min.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    
+     #logo
+     {
+         width:50px;
+         height:110px;
+         margin-top:-40px;
+
+     }
+     #ho1
+     {
+         width:50px;
+         height:50px;
+         margin-top:-10px;
+     }
+         
+       
+         .style1
+         {
+             width: 302px;
+         }
+         
+       
+         .style2
+         {
+             font-size: 50px;
+         }
+         .style3
+         {
+             font-size: 50px;
+             margin-top:10px;
+             color: #0000FF;
+             height:70px;
+         }
+         .style5
+         {
+             font-family: "Arial Black";
+         }
+         .cl1
+         {
+             background-color: #FF3300; 
+             height: 10px;
+             width:100;
+             margin-right:10px;
+         }
+        
+        
+         </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div class="navbar navbar-inverse set-radius-zero">
+            
+        <table style="width: 100%; background-image: url('/assets/img/WhatsApp%20Image%202019-10-25%20at%203.58.29%20PM.jpeg'); height: 160px;">
+            <tr>
+                <td class="style1">
+                    <div class="navbar-header">
+                    <div style="float:left">
+                        <a class="navbar-brand" href="#">
+                            <h2 style="margin:-5px;" >Donate Blood</h2>
+                            <img src="assets/img/logo.jpg" id="logo" />
+
+                        </a>
+                    </div>
+                </div>
+                </td>
+                <td class="style2" >
+                 <div class="banner">
+	<div >
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" 
+            
+            
+            style="visibility: visible;  animation-delay: 0.5s; animation-name: zoomIn; width: 99%; height: 101px;">
+            &nbsp;<span class="style5"><strong><span class="style3">&nbsp;&nbsp; Donate Blood: Save Life</span></strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Index.aspx">
+                        <img src="assets/img/homologo.png" id="ho1" /></a><asp:Button 
+                ID="btn1" runat="server" Text="login" CssClass="btn btn-danger pull-right" 
+                onclick="btn1_Click" />
+                    </h1>
+	</div>
+</div>
+                </td>
+                <td>
+                    <div class="right-div">
+                    &nbsp;</div>
+                </td>
+            </tr>
+            
+        </table>
+        </div>
+          
+       <div class="cl1" ">
+       </div>
+       
+    <div class="cl1">
+    </div>
+     <div style="height: 5px"></div>
+    <div>
+        <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" 
+            DynamicHorizontalOffset="2" Font-Names="Constantia" Font-Size="Larger" 
+            ForeColor="Red" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+            Width="100%" RenderingMode="Table" Font-Bold="True">
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <Items>
+                <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/Aboutus1.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" Value="Contact Us" 
+                    NavigateUrl="~/Contactus1.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Camp" Value="Camp" NavigateUrl="~/Camp1.aspx"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="Red" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#FFCC66" />
+        </asp:Menu>
+        
+    </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+       
+        </asp:ContentPlaceHolder>
+       
+
+    </div>
+    </form>
+</body>
+</html>
